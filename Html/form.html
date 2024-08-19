@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+        }
+        body{
+        background-image: url(ms-dhoni.jpg);
+        background-position: center;
+        background-attachment: fixed;
+        margin: 0px;
+        
+    }
+    .pavan{
+        color: greenyellow; 
+        
+        margin-left: 200px;
+    }
+    .pswd{
+        margin: 10px;
+    }
+    </style>
+</head>
+<form>
+    <h1 style="background-color: rgb(89, 0, 255); color: coral;">Personal Info</h1>
+    <div class="pavan">
+    <label ><b>Username:</b></label>
+    <input type="text" class="pswd" placeholder="Fullname"minlength="6" maxlength="15" required><br>
+    <label >Password:</label>
+    <input  type="text" class="pswd" placeholder="Strong pswd" minlength="5" maxlength="10" required><br>
+    <label >Email:</label>
+    <input type="text" class="pswd" placeholder="abc@gmail.com"><br>
+    <label >phone #:</label>
+    <input type="tel" class="pswd" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+    <label >Date-of-birth</label>
+    <input type="date" class="pswd"><br>
+
+    <label >Gender:</label>
+    <label >male</label>
+    <input class="pswd"type="radio" id="male" name="gender">
+    <label >female</label>
+    <input type="radio" id="female" name="gender"><br>
+    <label  >Address:</label>
+    <textarea type="text"  rows="3" cols="20" ></textarea><br>
+
+    <label >Payment:</label>
+    <select class="pswd">
+        <option>credit card</option>
+        <option>UPI</option>
+        <option>net banking</option>
+    </select><br>
+    <input type="reset" class="pswd"><br>
+    <input type="submit" class="pswd">
+</div>
+
+</form>
+</body>
+</html>

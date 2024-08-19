@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:whitesmoke;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            
+        }
+        .pavan{
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0px 0px 6px; 
+            width: 300px;
+            border-radius: 10px;
+        }
+        .pavan h2 {
+            text-align: center;
+        }
+        .pavan label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .pavan input
+        .pavan input,
+        .pavan input,
+        .pavan select,
+        .pavan textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .pavan input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .pavan input[type="submit"]:hover {
+            background-color: #7dc41b;
+        }
+    </style>
+</head>
+<body>
+    <div class="pavan">
+        <h2>Job Registration Form</h2>
+        
+            <label >Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label >Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label >Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label >Position Applied For</label>
+            <select id="position" name="position" required>
+                <option value="">Select a position</option>
+                <option>Software Developer</option>
+                <option >Designer</option>
+                <option >Project Manager</option>
+                <option >Data scientist</option>
+            </select>
+
+            <label >Years of Experience</label>
+            <input type="text" id="experience" name="experience" required>
+
+            <label >Address</label>
+            <textarea id="cover_letter" name="cover_letter" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        
+    </div>
+</body>
+</html>
